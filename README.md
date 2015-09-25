@@ -68,3 +68,13 @@ By default the `system()` function returns an error code (0 for success and 127 
 ```R
 num_files=as.numeric(system('ls -l | wc -l',intern = TRUE))
 ```
+
+If the output is more than a single line and you want to load it in a data frame, you can use the function `pipe()` instead of system. For example the following unix line returns the names of the files and their sizes in the current directory:
+```bash
+ls -l | tail -n +2 | awk '{print $9"\t"$5}'
+```
+Now in R, you can use `read.table` and `pipe` together to call the command and put the result in a data frame `file_sizes`:
+```R
+file_sizes=read.table(pipe('ls -l | tail -n +2 | awk \'{print $9"\t"$5}\''))
+```
+Note that the `'` chars in the bash command need to be escaped with `\'` in R because the command itself has to be a string in R delimited by `'`.
