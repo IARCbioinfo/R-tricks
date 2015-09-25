@@ -1,4 +1,4 @@
-https://www.r-project.org/Rlogo.png
+![R Logo](https://www.r-project.org/Rlogo.png)
 
 # Tip and tricks for R
 
