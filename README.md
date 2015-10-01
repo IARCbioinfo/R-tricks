@@ -78,3 +78,53 @@ Now in R, you can use `read.table` and `pipe` together to call the command and p
 file_sizes=read.table(pipe('ls -l | tail -n +2 | awk \'{print $9"\t"$5}\''))
 ```
 Note that the `'` chars in the bash command need to be escaped with `\'` in R because the command itself has to be a string in R delimited by `'`.
+
+
+### Building an argument section for your R script
+
+This is an example of how having a beautiful argument section in the head of your R script, with possible optional arguments
+
+```R
+#! /usr/bin/Rscript
+
+## Collect arguments
+args <- commandArgs(TRUE)
+
+## Parse arguments (we expect the form --arg=value)
+parseArgs <- function(x) strsplit(sub("^--", "", x), "=")
+argsL <- as.list(as.character(as.data.frame(do.call("rbind", parseArgs(args)))$V2))
+names(argsL) <- as.data.frame(do.call("rbind", parseArgs(args)))$V1
+args <- argsL
+rm(argsL)
+
+## Give some value to options if not provided 
+if(is.null(args$opt_arg1)) {args$opt_arg1="default_option1"}
+if(is.null(args$opt_arg2)) {args$opt_arg2="default_option1"} else {args$opt_arg2=as.numeric(args$opt_arg2)}
+
+## Default setting when no all arguments passed or help needed
+if("--help" %in% args | is.null(args$arg1) | is.null(args$arg2)) {
+  cat("
+      The R Script arguments_section.R
+      
+      Mandatory arguments:
+      --arg1=type           - description
+      --arg2=type           - description
+      --help                - print this text
+      
+      Optionnal arguments:
+      --opt_arg1=String          - example:an absolute path, default:default_option1
+      --opt_arg2=Value           - example:a threshold, default:10
+
+      WARNING : here put all the things the user has to know
+      
+      Example:
+      ./arguments_section.R --arg1=~/Documents/ --arg2=10 --opt_arg2=8 \n\n")
+  
+  q(save="no")
+}
+
+cat("first mandatory argument : ", args$arg1,"\n",sep="")
+cat("second mandatory argument : ", args$arg2,"\n",sep="")
+cat("first optional argument : ", args$opt_arg1,"\n",sep="")
+cat("second optional argument : ", args$opt_arg2,"\n",sep="")
+```
