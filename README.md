@@ -1,6 +1,6 @@
 ![R Logo](https://www.r-project.org/Rlogo.png)
 
-# Tip and tricks for R - Summary
+# Tip and tricks for R
 - [Usefull tools](https://github.com/IARC-bioinfo/R-tricks#usefull-tools)
 - [Tip and tricks](https://github.com/IARC-bioinfo/R-tricks#tip-and-tricks)
  - [Use Rscript to run R from bash](https://github.com/IARC-bioinfo/R-tricks#use-rscript-to-run-r-from-bash)
