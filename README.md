@@ -1,6 +1,8 @@
 ![R Logo](https://www.r-project.org/Rlogo.png)
 
-# Tip and tricks for R
+# Tip and tricks for R - Summary
+- [Usefull tools](https://github.com/IARC-bioinfo/R-tricks#usefull-tools)
+- [Tip and tricks](https://github.com/IARC-bioinfo/R-tricks#tip-and-tricks)
 
 ## Usefull tools
 - [R](https://www.r-project.org)
