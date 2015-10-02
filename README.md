@@ -3,6 +3,9 @@
 # Tip and tricks for R - Summary
 - [Usefull tools](https://github.com/IARC-bioinfo/R-tricks#usefull-tools)
 - [Tip and tricks](https://github.com/IARC-bioinfo/R-tricks#tip-and-tricks)
+ - [Use Rscript to run R from bash](https://github.com/IARC-bioinfo/R-tricks#use-rscript-to-run-r-from-bash)
+ - [Running bash commands from R](https://github.com/IARC-bioinfo/R-tricks#running-bash-commands-from-r)
+ - [Building an argument section in R](https://github.com/IARC-bioinfo/R-tricks#building-an-argument-section-for-your-r-script)
 
 ## Usefull tools
 - [R](https://www.r-project.org)
