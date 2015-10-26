@@ -64,6 +64,8 @@ And running:
 ```
 outputs 4 uniform numbers and 8 normally distributed numbers. Note that in this case it's harder to check the presence or absence of arguments.
 
+Also note that [`funr`](https://github.com/sahilseth/funr) is an interesting tool providing shell access to all R functions.
+
 ### Running bash commands from R
 Now the opposite: you need to run a bash command from y R script. In this section all commands should be run in R unless specified. The easiest way is to use the `system()` function:
 ```R
