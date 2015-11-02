@@ -13,7 +13,7 @@
 - [Revolution Analytics](http://www.revolutionanalytics.com) is a R fork made to be faster.
 
 ## Modern R
-There are new ways to use R for data processing workflow, in particular using combination of these packages: [`dplyr`](https://github.com/hadley/dplyr), [`magrittr`](https://github.com/smbache/magrittr), [`tidyr`](https://github.com/hadley/tidyr) and [`ggplot2`](https://github.com/hadley/ggplot2). A few nice tutorial/introductions:
+There are new ways to use R for data processing workflow, in particular using combination of these packages: [`dplyr`](https://github.com/hadley/dplyr), [`magrittr`](https://github.com/smbache/magrittr), [`tidyr`](https://github.com/hadley/tidyr) and [`ggplot2`](https://github.com/hadley/ggplot2) (with the [`cowplot`](https://github.com/wilkelab/cowplot) add-on). A few nice tutorial/introductions:
 - http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/
 - http://blog.rstudio.org/2014/07/22/introducing-tidyr/
 - https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
