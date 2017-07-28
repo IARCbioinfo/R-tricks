@@ -20,7 +20,8 @@ There are new ways to use R for data processing workflow, in particular using co
 - http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/
 
 ## Plotting with R
-There is a pretty nice R package to easily produce publication-ready plots with ggplot2 : [ggpubr](http://www.sthda.com/english/rpkgs/ggpubr/)
+There is a pretty nice R package to easily produce publication-ready plots with ggplot2 : [ggpubr](http://www.sthda.com/english/rpkgs/ggpubr/).  
+In addition, there is a list of color palettes inspired by colors used in scientific journals : [vignette](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html).
 
 ## Tip and tricks
 
