@@ -19,6 +19,9 @@ There are new ways to use R for data processing workflow, in particular using co
 - https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html
 - http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/
 
+## Plotting with R
+There is a pretty nice R package to easily produce publication-ready plots with ggplot2 : [ggpubr](http://www.sthda.com/english/rpkgs/ggpubr/)
+
 ## Tip and tricks
 
 ### Use Rscript to run R from bash
