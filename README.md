@@ -6,6 +6,7 @@
  - [Use Rscript to run R from bash](https://github.com/IARC-bioinfo/R-tricks#use-rscript-to-run-r-from-bash)
  - [Running bash commands from R](https://github.com/IARC-bioinfo/R-tricks#running-bash-commands-from-r)
  - [Building an argument section in R](https://github.com/IARC-bioinfo/R-tricks#building-an-argument-section-for-your-r-script)
+ - [Source github R code](https://github.com/IARC-bioinfo/R-tricks/)
 
 ## Usefull tools
 - [R](https://www.r-project.org)
@@ -147,3 +148,16 @@ cat("second mandatory argument : ", args$arg2,"\n",sep="")
 cat("first optional argument : ", args$opt_arg1,"\n",sep="")
 cat("second optional argument : ", args$opt_arg2,"\n",sep="")
 ```
+
+### Source R script hosted on github
+
+Once on the webpage of your R script on github, click on raw, and copy the URL from the toolbar. Then use the following code (change the [example](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/multiplot.r) of the raw web address):
+
+```
+library(RCurl)
+
+script <- getURL("https://raw.githubusercontent.com/tdelhomme/R-tips-tricks/master/Rcode/multiplot.r")
+
+eval(parse(text = script))
+```
+
