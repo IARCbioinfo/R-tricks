@@ -6,7 +6,7 @@
  - [Use Rscript to run R from bash](https://github.com/IARC-bioinfo/R-tricks#use-rscript-to-run-r-from-bash)
  - [Running bash commands from R](https://github.com/IARC-bioinfo/R-tricks#running-bash-commands-from-r)
  - [Building an argument section in R](https://github.com/IARC-bioinfo/R-tricks#building-an-argument-section-for-your-r-script)
- - [Source github R code](https://github.com/IARC-bioinfo/R-tricks/)
+ - [Source github R code](https://github.com/IARCbioinfo/R-tricks/blob/master/README.md#source-r-script-hosted-on-github)
 
 ## Usefull tools
 - [R](https://www.r-project.org)
