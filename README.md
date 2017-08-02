@@ -149,7 +149,7 @@ cat("first optional argument : ", args$opt_arg1,"\n",sep="")
 cat("second optional argument : ", args$opt_arg2,"\n",sep="")
 ```
 
-### Source R script hosted on github
+### Source an R script hosted on github
 
 Once on the webpage of your R script on github, click on raw, and copy the URL from the toolbar. Then use the following code (change the [example](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/multiplot.r) of the raw web address):
 
